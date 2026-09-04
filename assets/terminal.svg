@@ -12,33 +12,33 @@
   .out { fill:#8ea0c4 }
   .hi  { fill:#7fb0ff }
   .num { fill:#ffd15c }
-  .cur { fill:#5cff9d; animation: blink 1.05s steps(1) 3.4s infinite }
+  .cur { fill:#5cff9d; animation: blink 1.05s steps(1) 0.2s infinite }
   @keyframes blink { 0%,49% { opacity:1 } 50%,100% { opacity:0 } }
-  #r0 { animation: type0 0.36s steps(8) 0.35s both }
+  #r0 { animation: type0 0.18s steps(8) 0.25s both }
   @keyframes type0 { from { width:0 } to { width:67.4px } }
-  #r1 { animation: type1 1.35s steps(30) 0.87s both }
+  #r1 { animation: type1 0.66s steps(30) 0.53s both }
   @keyframes type1 { from { width:0 } to { width:252.6px } }
-  #r2 { animation: type2 0.12s steps(1) 2.38s both }
+  #r2 { animation: type2 0.08s steps(1) 1.29s both }
   @keyframes type2 { from { width:0 } to { width:1.0px } }
-  #r3 { animation: type3 0.67s steps(15) 2.55s both }
+  #r3 { animation: type3 0.33s steps(15) 1.41s both }
   @keyframes type3 { from { width:0 } to { width:126.3px } }
-  #r4 { animation: type4 1.53s steps(34) 3.38s both }
+  #r4 { animation: type4 0.75s steps(34) 1.84s both }
   @keyframes type4 { from { width:0 } to { width:286.3px } }
-  #r5 { animation: type5 1.30s steps(29) 5.07s both }
+  #r5 { animation: type5 0.64s steps(29) 2.68s both }
   @keyframes type5 { from { width:0 } to { width:244.2px } }
-  #r6 { animation: type6 0.12s steps(1) 6.54s both }
+  #r6 { animation: type6 0.08s steps(1) 3.42s both }
   @keyframes type6 { from { width:0 } to { width:1.0px } }
-  #r7 { animation: type7 1.17s steps(26) 6.71s both }
+  #r7 { animation: type7 0.57s steps(26) 3.54s both }
   @keyframes type7 { from { width:0 } to { width:218.9px } }
-  #r8 { animation: type8 1.53s steps(34) 8.04s both }
+  #r8 { animation: type8 0.75s steps(34) 4.21s both }
   @keyframes type8 { from { width:0 } to { width:286.3px } }
-  #r9 { animation: type9 1.40s steps(31) 9.73s both }
+  #r9 { animation: type9 0.68s steps(31) 5.06s both }
   @keyframes type9 { from { width:0 } to { width:261.0px } }
-  #r10 { animation: type10 0.12s steps(1) 11.28s both }
+  #r10 { animation: type10 0.08s steps(1) 5.84s both }
   @keyframes type10 { from { width:0 } to { width:1.0px } }
-  #r11 { animation: type11 1.21s steps(27) 11.45s both }
+  #r11 { animation: type11 0.59s steps(27) 5.96s both }
   @keyframes type11 { from { width:0 } to { width:227.3px } }
-  #r12 { animation: type12 0.18s steps(3) 12.83s both }
+  #r12 { animation: type12 0.12s steps(3) 6.66s both }
   @keyframes type12 { from { width:0 } to { width:25.3px } }
   /* With motion turned off the clip rects would stay at width 0 and the box
      would read as empty — so show every line at once instead. */

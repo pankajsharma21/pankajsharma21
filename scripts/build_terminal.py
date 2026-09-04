@@ -31,12 +31,12 @@ LINES = [
 H = TOP + LH * len(LINES) + 26
 
 rows, clips, css = [], [], []
-t = 0.35                                   # running start time, seconds
+t = 0.25                                   # running start time, seconds
 for i, (prompt, text, cls) in enumerate(LINES):
     y = TOP + i * LH
     full = prompt + text
     width = max(len(full) * CW, 1)
-    dur = max(len(full) * 0.045, 0.18) if full else 0.12
+    dur = max(len(full) * 0.022, 0.12) if full else 0.08
     clips.append(
         f'<clipPath id="c{i}"><rect id="r{i}" x="{PAD_X}" y="{y-14}" width="{width:.1f}" height="20"/></clipPath>')
     css.append(f'  #r{i} {{ animation: type{i} {dur:.2f}s steps({max(len(full),1)}) {t:.2f}s both }}')
@@ -49,7 +49,7 @@ for i, (prompt, text, cls) in enumerate(LINES):
         seg += f'<tspan class="{cls}">{esc}</tspan>'
     if seg:
         rows.append(f'<g clip-path="url(#c{i})"><text x="{PAD_X}" y="{y}" class="mono">{seg}</text></g>')
-    t += dur + (0.16 if full else 0.05)
+    t += dur + (0.10 if full else 0.04)
 
 cursor_x = PAD_X + len(LINES[-1][0] + LINES[-1][1]) * CW + 2
 cursor_y = TOP + (len(LINES) - 1) * LH
@@ -68,7 +68,7 @@ svg = f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{
   .out {{ fill:#8ea0c4 }}
   .hi  {{ fill:#7fb0ff }}
   .num {{ fill:#ffd15c }}
-  .cur {{ fill:#5cff9d; animation: blink 1.05s steps(1) 3.4s infinite }}
+  .cur {{ fill:#5cff9d; animation: blink 1.05s steps(1) 0.2s infinite }}
   @keyframes blink {{ 0%,49% {{ opacity:1 }} 50%,100% {{ opacity:0 }} }}
 {chr(10).join(css)}
   /* With motion turned off the clip rects would stay at width 0 and the box
