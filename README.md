@@ -1,6 +1,6 @@
-<img src="assets/hero.svg" alt="Pankaj Sharma — Java backend engineer" width="100%">
+<img src="assets/hero.gif" alt="Pankaj Sharma — Java backend engineer" width="100%">
 
-<img src="assets/terminal.svg" alt="Terminal introduction" width="100%">
+<img src="assets/terminal.gif" alt="Terminal introduction" width="100%">
 
 ---
 
@@ -51,5 +51,9 @@ radius, and pulls JVM thread/heap dumps when the logs aren't enough. Includes an
 <sub>These are generated from the GitHub API by
 <a href="scripts/generate_stats.py"><code>scripts/generate_stats.py</code></a> and committed to this
 repo by a daily Action — no third-party stats service is involved, so nothing here can break,
-rate-limit, or watch who visits this page. The banner and terminal are hand-built SVGs; their
-source lives in <a href="scripts/"><code>scripts/</code></a>.</sub>
+rate-limit, or watch who visits this page.</sub>
+
+<sub>The banner and terminal are hand-built SVGs (<a href="scripts/"><code>scripts/</code></a>),
+rendered to GIF by <a href="scripts/build_gifs.py"><code>build_gifs.py</code></a>. An SVG loaded
+through <code>&lt;img&gt;</code> — how GitHub embeds README images — runs neither its CSS nor its
+SMIL animations, so the SVG stays the editable source and the GIF is what actually moves.</sub>
