@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 320" width="1000" height="320" role="img" aria-label="Pankaj Sharma — Java backend engineer">
+<defs>
+  <linearGradient id="space" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#070b18"/><stop offset="55%" stop-color="#0d1430"/><stop offset="100%" stop-color="#131a3d"/>
+  </linearGradient>
+  <radialGradient id="glow" cx="50%" cy="50%">
+    <stop offset="0%" stop-color="#4c7dff" stop-opacity=".33"/><stop offset="100%" stop-color="#4c7dff" stop-opacity="0"/>
+  </radialGradient>
+  <radialGradient id="planet" cx="35%" cy="30%">
+    <stop offset="0%" stop-color="#3f6ae0"/><stop offset="60%" stop-color="#24408f"/><stop offset="100%" stop-color="#152354"/>
+  </radialGradient>
+  <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0%" stop-color="#ffffff"/><stop offset="55%" stop-color="#e4e9f5"/><stop offset="100%" stop-color="#bcc5da"/>
+  </linearGradient>
+  <linearGradient id="visor" x1="0.1" y1="0" x2="0.9" y2="1">
+    <stop offset="0%" stop-color="#1b2a55"/><stop offset="45%" stop-color="#0a1330"/><stop offset="100%" stop-color="#254a9a"/>
+  </linearGradient>
+  <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0%" stop-color="#ffffff"/><stop offset="55%" stop-color="#bfd4ff"/><stop offset="100%" stop-color="#7fa9ff"/>
+  </linearGradient>
+</defs>
+<style>
+  @keyframes tw    { 0%,100% { opacity:.18 } 50% { opacity:1 } }
+  @keyframes float { 0%,100% { transform:translate(0,0) rotate(-6deg) }
+                     50%     { transform:translate(-10px,-18px) rotate(2deg) } }
+  @keyframes drift { 0%,100% { transform:translate(0,0) } 50% { transform:translate(0,-7px) } }
+  @keyframes spin  { from { transform:rotate(0) } to { transform:rotate(360deg) } }
+  .astro  { animation: float 7s ease-in-out infinite; transform-origin: 815px 165px; }
+  .planet { animation: drift 11s ease-in-out infinite; }
+  .ring   { animation: spin 40s linear infinite; transform-origin: 690px 92px; }
+  @media (prefers-reduced-motion: reduce) {
+    .astro,.planet,.ring,circle,path { animation: none !important }
+  }
+</style>
+
+<rect width="1000" height="320" fill="url(#space)"/>
+<ellipse cx="810" cy="160" rx="260" ry="190" fill="url(#glow)"/>
+<circle cx="167.6" cy="219.2" r="1.1" fill="#fff" style="animation:tw 3.78s ease-in-out 1.08s infinite" opacity="0.65"/><circle cx="805.4" cy="163.9" r="1.8" fill="#fff" style="animation:tw 3.94s ease-in-out 3.94s infinite" opacity="0.26"/><circle cx="929.3" cy="137.6" r="0.9" fill="#fff" style="animation:tw 4.82s ease-in-out 1.16s infinite" opacity="0.37"/><circle cx="46.0" cy="315.2" r="1.4" fill="#fff" style="animation:tw 4.23s ease-in-out 0.17s infinite" opacity="0.41"/><circle cx="497.6" cy="40.1" r="1.1" fill="#fff" style="animation:tw 2.28s ease-in-out 3.71s infinite" opacity="0.29"/><circle cx="806.1" cy="10.1" r="0.9" fill="#fff" style="animation:tw 4.02s ease-in-out 1.71s infinite" opacity="0.49"/><circle cx="189.4" cy="15.6" r="0.9" fill="#fff" style="animation:tw 2.45s ease-in-out 0.99s infinite" opacity="0.59"/><circle cx="800.5" cy="209.3" r="1.8" fill="#fff" style="animation:tw 5.46s ease-in-out 0.35s infinite" opacity="0.53"/><circle cx="558.5" cy="125.1" r="1.1" fill="#fff" style="animation:tw 5.25s ease-in-out 4.44s infinite" opacity="0.45"/><circle cx="366.3" cy="144.8" r="1.4" fill="#fff" style="animation:tw 3.25s ease-in-out 2.42s infinite" opacity="0.38"/><circle cx="831.4" cy="53.6" r="1.4" fill="#fff" style="animation:tw 2.21s ease-in-out 0.35s infinite" opacity="0.55"/><circle cx="522.0" cy="182.3" r="1.1" fill="#fff" style="animation:tw 4.04s ease-in-out 3.11s infinite" opacity="0.34"/><circle cx="172.7" cy="112.6" r="1.1" fill="#fff" style="animation:tw 3.34s ease-in-out 2.99s infinite" opacity="0.4"/><circle cx="106.4" cy="24.5" r="0.9" fill="#fff" style="animation:tw 4.76s ease-in-out 1.87s infinite" opacity="0.59"/><circle cx="674.5" cy="284.4" r="0.9" fill="#fff" style="animation:tw 3.54s ease-in-out 4.95s infinite" opacity="0.73"/><circle cx="589.8" cy="279.5" r="1.4" fill="#fff" style="animation:tw 3.87s ease-in-out 3.33s infinite" opacity="0.72"/><circle cx="247.9" cy="179.3" r="1.4" fill="#fff" style="animation:tw 4.86s ease-in-out 3.87s infinite" opacity="0.49"/><circle cx="834.3" cy="20.3" r="1.1" fill="#fff" style="animation:tw 4.37s ease-in-out 0.17s infinite" opacity="0.37"/><circle cx="395.4" cy="275.6" r="0.9" fill="#fff" style="animation:tw 5.45s ease-in-out 3.73s infinite" opacity="0.49"/><circle cx="254.2" cy="303.2" r="1.8" fill="#fff" style="animation:tw 5.21s ease-in-out 2.4s infinite" opacity="0.73"/><circle cx="896.2" cy="118.1" r="0.9" fill="#fff" style="animation:tw 5.11s ease-in-out 3.01s infinite" opacity="0.46"/><circle cx="580.5" cy="269.0" r="1.1" fill="#fff" style="animation:tw 2.66s ease-in-out 2.94s infinite" opacity="0.32"/><circle cx="719.0" cy="123.3" r="0.9" fill="#fff" style="animation:tw 5.35s ease-in-out 0.12s infinite" opacity="0.55"/><circle cx="642.7" cy="269.7" r="1.8" fill="#fff" style="animation:tw 3.59s ease-in-out 3.42s infinite" opacity="0.63"/><circle cx="809.7" cy="47.2" r="0.9" fill="#fff" style="animation:tw 2.51s ease-in-out 0.47s infinite" opacity="0.26"/><circle cx="447.3" cy="47.9" r="0.7" fill="#fff" style="animation:tw 4.36s ease-in-out 0.63s infinite" opacity="0.52"/><circle cx="325.7" cy="158.1" r="0.9" fill="#fff" style="animation:tw 4.25s ease-in-out 0.91s infinite" opacity="0.68"/><circle cx="204.0" cy="236.2" r="0.7" fill="#fff" style="animation:tw 4.19s ease-in-out 2.52s infinite" opacity="0.62"/><circle cx="60.2" cy="293.9" r="1.4" fill="#fff" style="animation:tw 3.73s ease-in-out 0.32s infinite" opacity="0.63"/><circle cx="177.9" cy="226.0" r="1.1" fill="#fff" style="animation:tw 5.38s ease-in-out 3.03s infinite" opacity="0.62"/><circle cx="246.8" cy="52.7" r="1.1" fill="#fff" style="animation:tw 4.9s ease-in-out 4.02s infinite" opacity="0.5"/><circle cx="572.4" cy="174.2" r="0.7" fill="#fff" style="animation:tw 3.88s ease-in-out 3.67s infinite" opacity="0.73"/><circle cx="311.7" cy="222.2" r="1.8" fill="#fff" style="animation:tw 4.7s ease-in-out 0.95s infinite" opacity="0.56"/><circle cx="327.1" cy="66.8" r="0.7" fill="#fff" style="animation:tw 3.25s ease-in-out 4.97s infinite" opacity="0.3"/><circle cx="79.5" cy="26.9" r="1.4" fill="#fff" style="animation:tw 3.87s ease-in-out 4.74s infinite" opacity="0.59"/><circle cx="704.0" cy="150.9" r="1.8" fill="#fff" style="animation:tw 3.49s ease-in-out 2.01s infinite" opacity="0.36"/><circle cx="52.4" cy="139.4" r="0.9" fill="#fff" style="animation:tw 3.11s ease-in-out 2.95s infinite" opacity="0.45"/><circle cx="427.6" cy="252.9" r="1.4" fill="#fff" style="animation:tw 3.47s ease-in-out 2.43s infinite" opacity="0.57"/><circle cx="959.4" cy="30.6" r="1.4" fill="#fff" style="animation:tw 2.77s ease-in-out 1.87s infinite" opacity="0.55"/><circle cx="218.2" cy="144.3" r="1.8" fill="#fff" style="animation:tw 4.4s ease-in-out 4.29s infinite" opacity="0.6"/><circle cx="681.5" cy="80.5" r="1.4" fill="#fff" style="animation:tw 3.47s ease-in-out 3.07s infinite" opacity="0.66"/><circle cx="960.0" cy="312.6" r="0.7" fill="#fff" style="animation:tw 2.73s ease-in-out 1.01s infinite" opacity="0.69"/><circle cx="714.7" cy="32.3" r="0.9" fill="#fff" style="animation:tw 2.46s ease-in-out 1.51s infinite" opacity="0.72"/><circle cx="740.4" cy="148.3" r="0.7" fill="#fff" style="animation:tw 5.47s ease-in-out 0.83s infinite" opacity="0.47"/><circle cx="677.2" cy="120.1" r="1.8" fill="#fff" style="animation:tw 4.45s ease-in-out 1.3s infinite" opacity="0.73"/><circle cx="323.5" cy="83.3" r="0.9" fill="#fff" style="animation:tw 5.17s ease-in-out 2.54s infinite" opacity="0.37"/><circle cx="686.7" cy="227.5" r="0.9" fill="#fff" style="animation:tw 5.3s ease-in-out 2.33s infinite" opacity="0.47"/><circle cx="616.2" cy="91.6" r="0.9" fill="#fff" style="animation:tw 4.4s ease-in-out 3.11s infinite" opacity="0.3"/><circle cx="971.4" cy="71.1" r="1.1" fill="#fff" style="animation:tw 4.87s ease-in-out 4.67s infinite" opacity="0.6"/><circle cx="22.8" cy="160.4" r="0.7" fill="#fff" style="animation:tw 3.51s ease-in-out 2.21s infinite" opacity="0.47"/><circle cx="986.9" cy="297.8" r="0.9" fill="#fff" style="animation:tw 2.51s ease-in-out 1.54s infinite" opacity="0.48"/><circle cx="891.3" cy="119.5" r="0.9" fill="#fff" style="animation:tw 4.08s ease-in-out 4.56s infinite" opacity="0.47"/><circle cx="838.1" cy="100.3" r="1.4" fill="#fff" style="animation:tw 3.53s ease-in-out 2.76s infinite" opacity="0.36"/><circle cx="800.0" cy="267.2" r="1.4" fill="#fff" style="animation:tw 5.12s ease-in-out 0.09s infinite" opacity="0.54"/><circle cx="83.8" cy="284.7" r="0.9" fill="#fff" style="animation:tw 2.7s ease-in-out 2.49s infinite" opacity="0.51"/><circle cx="535.3" cy="157.3" r="1.1" fill="#fff" style="animation:tw 2.7s ease-in-out 0.77s infinite" opacity="0.39"/><circle cx="638.9" cy="6.9" r="0.7" fill="#fff" style="animation:tw 4.4s ease-in-out 0.93s infinite" opacity="0.3"/><circle cx="825.7" cy="116.4" r="1.1" fill="#fff" style="animation:tw 2.39s ease-in-out 0.19s infinite" opacity="0.5"/><circle cx="679.3" cy="207.8" r="0.9" fill="#fff" style="animation:tw 2.31s ease-in-out 1.16s infinite" opacity="0.43"/><circle cx="252.4" cy="66.1" r="0.9" fill="#fff" style="animation:tw 4.6s ease-in-out 2.62s infinite" opacity="0.29"/><circle cx="824.7" cy="70.7" r="0.7" fill="#fff" style="animation:tw 4.6s ease-in-out 3.03s infinite" opacity="0.57"/><circle cx="641.4" cy="10.6" r="1.1" fill="#fff" style="animation:tw 3.83s ease-in-out 0.81s infinite" opacity="0.68"/><circle cx="804.3" cy="286.8" r="0.7" fill="#fff" style="animation:tw 2.92s ease-in-out 3.89s infinite" opacity="0.7"/><circle cx="533.0" cy="287.4" r="1.1" fill="#fff" style="animation:tw 3.49s ease-in-out 4.71s infinite" opacity="0.72"/><circle cx="791.5" cy="7.5" r="1.1" fill="#fff" style="animation:tw 2.77s ease-in-out 1.33s infinite" opacity="0.26"/><circle cx="377.1" cy="237.5" r="0.9" fill="#fff" style="animation:tw 5.27s ease-in-out 2.68s infinite" opacity="0.69"/><circle cx="209.2" cy="315.4" r="1.8" fill="#fff" style="animation:tw 3.14s ease-in-out 2.25s infinite" opacity="0.63"/><circle cx="951.4" cy="288.0" r="0.9" fill="#fff" style="animation:tw 3.54s ease-in-out 0.89s infinite" opacity="0.52"/><circle cx="812.5" cy="117.0" r="0.9" fill="#fff" style="animation:tw 5.48s ease-in-out 4.56s infinite" opacity="0.73"/><circle cx="753.1" cy="311.1" r="0.9" fill="#fff" style="animation:tw 4.65s ease-in-out 1.06s infinite" opacity="0.52"/>
+<path d="M 385.9 273.6 Q 385.9 277.8 390.2 277.8 Q 385.9 277.8 385.9 282.1 Q 385.9 277.8 381.7 277.8 Q 385.9 277.8 385.9 273.6 Z" fill="#cfe3ff" style="animation:tw 3.48s ease-in-out 2.65s infinite"/><path d="M 600.0 141.4 Q 600.0 146.1 604.7 146.1 Q 600.0 146.1 600.0 150.9 Q 600.0 146.1 595.2 146.1 Q 600.0 146.1 600.0 141.4 Z" fill="#cfe3ff" style="animation:tw 3.57s ease-in-out 0.85s infinite"/><path d="M 222.3 232.7 Q 222.3 236.8 226.3 236.8 Q 222.3 236.8 222.3 240.8 Q 222.3 236.8 218.2 236.8 Q 222.3 236.8 222.3 232.7 Z" fill="#cfe3ff" style="animation:tw 4.43s ease-in-out 0.16s infinite"/><path d="M 815.7 76.0 Q 815.7 81.5 821.2 81.5 Q 815.7 81.5 815.7 86.9 Q 815.7 81.5 810.2 81.5 Q 815.7 81.5 815.7 76.0 Z" fill="#cfe3ff" style="animation:tw 4.01s ease-in-out 1.76s infinite"/><path d="M 325.7 60.8 Q 325.7 64.8 329.7 64.8 Q 325.7 64.8 325.7 68.9 Q 325.7 64.8 321.6 64.8 Q 325.7 64.8 325.7 60.8 Z" fill="#cfe3ff" style="animation:tw 3.48s ease-in-out 0.57s infinite"/><path d="M 88.8 218.7 Q 88.8 224.4 94.5 224.4 Q 88.8 224.4 88.8 230.1 Q 88.8 224.4 83.2 224.4 Q 88.8 224.4 88.8 218.7 Z" fill="#cfe3ff" style="animation:tw 3.89s ease-in-out 3.33s infinite"/>
+
+<!-- distant planet with an orbiting ring -->
+<g class="planet">
+  <circle cx="690" cy="92" r="30" fill="url(#planet)"/>
+  <ellipse cx="690" cy="92" rx="46" ry="13" fill="none" stroke="#5f86ff" stroke-opacity=".55" stroke-width="2" class="ring" transform="rotate(-18 690 92)"/>
+  <circle cx="678" cy="84" r="5" fill="#1a2c63" opacity=".65"/>
+  <circle cx="700" cy="101" r="3.5" fill="#1a2c63" opacity=".5"/>
+</g>
+
+<!-- astronaut: tether first so it sits behind the suit -->
+<g class="astro">
+  <path d="M 762 196 C 726 214, 700 236, 668 244" fill="none" stroke="#8fa3c8" stroke-width="2" stroke-opacity=".7" stroke-linecap="round"/>
+  <rect x="784" y="126" width="58" height="66" rx="16" fill="#9aa8c4"/>
+  <rect x="792" y="134" width="42" height="20" rx="7" fill="#7e8ca8"/>
+  <g>
+    <rect x="789" y="150" width="52" height="62" rx="20" fill="url(#suit)"/>
+    <rect x="801" y="168" width="28" height="18" rx="5" fill="#59657f"/>
+    <circle cx="808" cy="177" r="3" fill="#5cff9d"/>
+    <circle cx="818" cy="177" r="3" fill="#ffd15c"/>
+    <rect x="765" y="156" width="26" height="14" rx="7" fill="url(#suit)" transform="rotate(-26 778 163)"/>
+    <rect x="839" y="156" width="26" height="14" rx="7" fill="url(#suit)" transform="rotate(22 852 163)"/>
+    <rect x="795" y="206" width="16" height="30" rx="8" fill="url(#suit)" transform="rotate(9 803 221)"/>
+    <rect x="819" y="206" width="16" height="30" rx="8" fill="url(#suit)" transform="rotate(-13 827 221)"/>
+    <circle cx="815" cy="132" r="30" fill="url(#suit)"/>
+    <circle cx="815" cy="132" r="23" fill="url(#visor)"/>
+    <path d="M 802 122 Q 810 116 820 119 Q 810 124 806 132 Z" fill="#9fc4ff" opacity=".75"/>
+    <circle cx="824" cy="140" r="4" fill="#bcd8ff" opacity=".35"/>
+  </g>
+</g>
+
+<g><text x="70" y="128" font-family="'Segoe UI',Ubuntu,Helvetica,Arial,sans-serif" font-size="52" font-weight="700" fill="url(#name)">Pankaj Sharma</text></g>
+<g><text x="72" y="166" font-family="'Segoe UI',Ubuntu,Helvetica,Arial,sans-serif" font-size="20" fill="#8fa6d8" letter-spacing="3.5">JAVA  BACKEND  ENGINEER</text></g>
+<g>
+  <rect x="70" y="192" width="205" height="30" rx="15" fill="#4c7dff" fill-opacity=".13" stroke="#4c7dff" stroke-opacity=".4"/>
+  <text x="88" y="212" font-family="'Segoe UI',Ubuntu,Helvetica,Arial,sans-serif" font-size="13.5" fill="#a9c2ff">Spring Boot · Kafka · AWS</text>
+  <rect x="285" y="192" width="188" height="30" rx="15" fill="#5cff9d" fill-opacity=".1" stroke="#5cff9d" stroke-opacity=".33"/>
+  <text x="303" y="212" font-family="'Segoe UI',Ubuntu,Helvetica,Arial,sans-serif" font-size="13.5" fill="#8ef0bd">Building local-first AI</text>
+</g>
+</svg>

@@ -1,0 +1,36 @@
+name: Refresh profile stats
+
+# The stats SVGs are committed files, not hotlinked third-party images, so they
+# need a nudge to stay current. Daily is plenty for a profile page.
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Regenerate stats and contribution SVGs
+        env:
+          # If the contribution calendar comes back empty in the log, swap this for
+          # a PAT with read:user stored as a repository secret.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/generate_stats.py ${{ github.repository_owner }}
+
+      - name: Commit only if something actually changed
+        run: |
+          if [ -z "$(git status --porcelain assets)" ]; then
+            echo "No change in the generated SVGs — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "Pankaj Sharma"
+          git config user.email "72573470+pankajsharma21@users.noreply.github.com"
+          git add assets
+          git commit -m "Refresh profile stats"
+          git push
